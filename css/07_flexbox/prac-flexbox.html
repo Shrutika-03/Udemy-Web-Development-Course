@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Flexbox</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+            background-color: #9fd7c4;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        .container {
+            border: 2px solid #000;
+            padding: 20px;
+            min-width: 400px;
+        }
+
+        .flex-container {
+            display: flex;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .square {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .box-1 {
+            background-color: #3e54ad;
+        }
+
+        .box-2 {
+            background-color: #abad3e;
+        }
+
+        .box-3 {
+            background-color: #ad5b3e;
+        }
+
+        .box-4 {
+            background-color: #3ead4d;
+        }
+
+        .box-5 {
+            background-color: #ad3e54;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Practice All Flexbox Properties</h1>
+
+    <div class="container">
+        <h2>1. Flex default direction(row)</h2>
+        <div class="flex-container">
+            <div class="square box-1">One</div>
+            <div class="square box-2">Two</div>
+            <div class="square box-3">Three</div>
+            <div class="square box-4">Four</div>
+            <div class="square box-5">Five</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>2. Flex direction: column</h2>
+        <div class="flex-container" style="flex-direction: column;">
+            <div class="square box-1">One</div>
+            <div class="square box-2">Two</div>
+            <div class="square box-3">Three</div>
+            <div class="square box-4">Four</div>
+            <div class="square box-5">Five</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>3. Justify-content(space-between)</h2>
+        <div class="flex-container" style="justify-content: space-between;">
+            <div class="square box-1">One</div>
+            <div class="square box-2">Two</div>
+            <div class="square box-3">Three</div>
+            <div class="square box-4">Four</div>
+            <div class="square box-5">Five</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>4. Align Items(center)</h2>
+        <div class="flex-container" style="align-items: center;">
+            <div class="square box-1">One</div>
+            <div class="square box-2">Two</div>
+            <div class="square box-3">Three</div>
+            <div class="square box-4">Four</div>
+            <div class="square box-5">Five</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>5. Flex wrap(wrap)</h2>
+        <div class="flex-container" style="flex-wrap: wrap;">
+            <div class="square box-1">One</div>
+            <div class="square box-2">Two</div>
+            <div class="square box-3">Three</div>
+            <div class="square box-4">Four</div>
+            <div class="square box-5">Five</div>
+            <div class="square box-1">One</div>
+            <div class="square box-2">Two</div>
+            <div class="square box-3">Three</div>
+            <div class="square box-4">Four</div>
+            <div class="square box-5">Five</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>6. Align-content: Space-between(with wrap)</h2>
+        <div class="flex-container" style="align-content: space-around; flex-wrap: wrap;">
+            <div class="square box-1">One</div>
+            <div class="square box-2">Two</div>
+            <div class="square box-3">Three</div>
+            <div class="square box-4">Four</div>
+            <div class="square box-5">Five</div>
+        </div>
+    </div>
+
+    <h1>Property: Manipulate Inner child</h1>
+
+    <div class="container">
+        <h2>7.Order Property</h2>
+        <div class="flex-container">
+            <div class="square box-1" style="order: 4;">1</div>
+            <div class="square box-2" style="order: 1;">2</div>
+            <div class="square box-3" style="order: 2;">3</div>
+            <div class="square box-4" style="order: 5;">4</div>
+            <div class="square box-5" style="order: 3;">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>8. Flex Grow</h2>
+        <div class="flex-container">
+            <div class="square box-1" style="flex-grow: 1;">One</div>
+            <div class="square box-2" style="flex-grow: 2;">Two</div>
+            <div class="square box-3" style="flex-grow: 4;">Three</div>
+            <div class="square box-4" style="flex-grow: 1;">Four</div>
+            <div class="square box-5" style="flex-grow: 1;">Five</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>9. Align-Self</h2>
+        <div class="flex-container">
+            <div class="square box-1" style="align-self: flex-start;">One</div>
+            <div class="square box-2" style="align-self: flex-end;">Two</div>
+            <div class="square box-3" style="align-self: stretch; height: auto;">Three</div>
+            <div class="square box-4" style="align-self: self-start;">Four</div>
+            <div class="square box-5" style="align-self: self-end;">Five</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Practice</title>
+    <style>
+        .main-container {
+            background-color: lightcyan;
+            display: grid;
+            grid-template-columns: 150px 1fr 1fr 150px;
+            grid-template-rows: 200px 200px 200px 200px;
+            /* row-gap: 5px;
+            column-gap: 5px; */
+            height: 100vh;
+        }
+
+        .box {
+            background-color: lightseagreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .item-1 {
+            grid-row: 1/1;
+            background-color: tomato;
+            font-size: 50px;
+        }
+
+        .item-2 {
+            grid-row: 1/2;
+            background-color: springgreen;
+            font-size: 20px;
+
+        }
+
+        .item-3 {
+            grid-row: 1/2;
+            background-color: slateblue;
+        }
+
+        .item-4 {
+            grid-column: 4/4;
+            grid-row: 1/3;
+        }
+
+        .item-5 {
+            font-size: 30px;
+
+        }
+
+        .item-6 {
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+
+        .item-7 {
+            font-size: 80px;
+            background-color: rosybrown;
+
+        }
+
+        .item-8 {
+            font-size: 50px;
+            background-color: saddlebrown;
+
+        }
+
+        .item-9 {
+            background-color: sienna;
+            font-size: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="box item-1">123</div>
+        <div class="box item-2">AaBbCc <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quod.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ratione.
+        </div>
+        <div class="box item-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat, autem
+            consequatur maiores quae mollitia consectetur deleniti laudantium deserunt amet repudiandae eaque,
+            cupiditate sit dignissimos sequi, qui quia ea? Molestiae atque sint eaque quis reprehenderit dolor iste
+            obcaecati tempora. Nisi aliquid repudiandae exercitationem consectetur sed laboriosam officiis placeat odit
+            ex.</div>
+        <div class="box item-4">4</div>
+        <div class="box item-5">Rounded Corners</div>
+        <div class="box item-6">Image Title</div>
+        <div class="box item-7">16.09</div>
+        <div class="box item-8">16.09</div>
+        <div class="box item-9">BENTO</div>
+        <div class="box item-10">10</div>
+    </div>
+</body>
+
+</html>
