@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox practice</title>
+    <style>
+        body {
+            /* background-color: darkred; */
+            background-image: url("https://media.istockphoto.com/id/1433126423/photo/christmas-background-composition-with-candy-canes-colorful-balls-wrapped-gifts-wreaths-and.webp?b=1&s=612x612&w=0&k=20&c=NlRf5vCduhP5o94TtplAMa8Xr_zCyfoBr2xAB2m0Qso=");
+            background-size: cover;
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            margin: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-1 ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        img {
+            margin-left: 20px;
+        }
+
+        li {
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src=https://www.pngplay.com/wp-content/uploads/5/Santa-Claus-Hat-Shining-PNG.png alt="santa cap"
+            width="80px" height="50px">
+        <nav class="navbar-1">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Event</li>
+                <li>Client</li>
+                <li>Pricing</li>
+                <li>Gallery</li>
+                <li>Artist</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- hero-section -->
+    <div class="hero-section">
+        <p>25 December 2024</p>
+        <h1>Mary Christmas</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam dignissimos recusandae delectus ab possimus
+            quibusdam expedita amet asperiores.</p>
+        <button class="btn-1">Register Now</button>
+        <button class="btn-1">Read More</button>
+    </div>
+</body>
+
+</html>
