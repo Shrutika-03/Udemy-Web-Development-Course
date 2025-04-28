@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice DOM</title>
+</head>
+
+<body>
+    <h2>Practice DOM Interview Questions</h2>
+    <section>
+        <h2>First Question</h2>
+        <div data-user-id='123'>Hello User</div>
+    </section>
+    <section>
+        <h2>Second Question</h2>
+        <ul id="itemList">
+            <li>Bread</li>
+            <li>Cheese</li>
+            <li>Corn</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Third Question</h2>
+        <p>Remove all child nodes</p>
+        <div id="parentNode">
+            <p>Paragraph One</p>
+            <p>Paragraph Two</p>
+        </div>
+        <button onclick="clearAllNodes()">Clear All</button>
+    </section>
+    <section>
+        <h2>Fourth Question</h2>
+        <!-- <h4>The text change using inner HTML</h4>
+        <p id="text">This is just a text</p> -->
+
+        <div id="exampleDiv">
+            <p>This is visible text.</p>
+            <p style="display:none;">This is hidden text.</p>
+        </div>
+
+        <button onclick="showInnerText()">Show innerText</button>
+    </section>
+
+    <section>
+        <h2>Fifth Question</h2>
+        <p>If you want to attach an event to multiple buttons for the same action, what is the best approach?</p>
+        <!-- first way to solve -->
+        <!-- <button class="action-btn">Button 1</button>
+        <button class="action-btn">Button 2</button>
+        <button class="action-btn">Button 3</button> -->
+        <!-- second way to solve -->
+        <div id="buttonContainer">
+            <button class="action-btn">Click Me 1</button>
+            <button class="action-btn">Click Me 2</button>
+        </div>
+    </section>
+    <script src="./practiceDOMScript.js"></script>
+</body>
+
+</html>

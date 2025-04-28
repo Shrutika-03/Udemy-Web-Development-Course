@@ -11,11 +11,25 @@
             color: #fff;
         }
     </style>
+    <!-- <script src="./script.js"></script> that is also allow but it load befor all UI part display-->
+
 </head>
 
 <body>
+    <!-- <script src="./script.js"></script> it is also allow but befor load UI data functionality will be load but it is bad practice -->
     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+    <!-- it is a good practice because after all UI part display the functionality will be work// it means want to display button first and then add their respected functionality work  -->
     <script src="./script.js"></script>
+
+    <!-- The script is downloaded while the HTML is still being parsed, but it’s only executed after the HTML is fully loaded -->
+    <!-- <script defer src="./script.js"></script> -->
+
+    <!-- ****************************************************************** -->
+
+    <!-- As soon as the script is downloaded, it is executed immediately, even if the HTML parsing is not finished. -->
+    <!-- <script async src="./script.js"></script> -->
+
 </body>
 
 </html>
