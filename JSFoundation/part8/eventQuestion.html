@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event questions</title>
+    <style>
+        /* body {
+            background-color: #b0b0dc;
+        }
+
+        #bodyContainer {
+            transition: background-color 0.3s, color 0.3s;
+        } */
+
+        .light-mode {
+            background-color: #b0b0dc;
+            color: white;
+        }
+
+        .dark-mode {
+            background-color: blue;
+            color: white;
+        }
+
+        #toggle {
+            margin: 20px;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body id="bodyContainer">
+    <!-- <button id="toggle">Toggle Dark Mode</button> -->
+    <!-- ******************** event delegation  -->
+    <!-- <ul id="parent">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul> -->
+
+
+    <!-- ************************ event bubbling -->
+    <!-- <div id="parentDiv">
+        <button id="childBtn">Click</button>
+    </div> -->
+
+
+    <!-- /* -------------- To Do List App --------------------- */ -->
+    <!-- // Add task & Delete Task -->
+    <!-- <input type="text" id="taskInput" placeholder="Add task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul> -->
+
+
+    <!-- --------------- Modal Popup -->
+    <button onclick="openModal()">Open Modal</button>
+
+    <div id="modal" style="display:none; position:fixed; top:0; left:0; 
+        width:100%; height:100%; background:rgba(0,0,0,0.5);">
+        <div style="background:white; margin:10% auto; padding:20px; width:300px;" onclick="event.stopPropagation()">
+            <p>This is a modal!</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    <script src="./eventQuestion.js"></script>
+</body>
+
+</html>
