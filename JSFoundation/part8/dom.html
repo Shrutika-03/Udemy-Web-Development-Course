@@ -20,7 +20,7 @@
 
         .toggleContainer {
             width: 200px;
-            height: 100px;
+            height: 400px;
             background-color: brown;
             text-align: center;
             line-height: 100px;
@@ -31,11 +31,40 @@
         .hidden {
             display: none;
         }
+
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin: 50px auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
     <h1>JavaScript DOM Challenges</h1>
+
+    <!-- Small Toggle Project -->
+    <!-- <div id="toggleContainer">Toggle Frame</div>
+    <button id="toggleBtn">Click to Toggle</button> -->
+
+    <!-- generate Random COlor -->
+
+    <div id="colorBox"></div>
+    <button onclick="color()">Change Color</button>
+
+
     <!-- Example 1-- Accessing DOM Elements -->
     <!-- <section id="example-1">
         <h2>Accessing DOM Elements</h2>
@@ -132,9 +161,7 @@
         <button id="toggleHighlight">Toggle Highlight</button>
     </section> -->
 
-    <!-- Small Toggle Project -->
-    <div id="toggleContainer">Toggle Frame</div>
-    <button id="toggleBtn">Click to Toggle</button>
+
 
 
     <script src="./domFun.js"></script>

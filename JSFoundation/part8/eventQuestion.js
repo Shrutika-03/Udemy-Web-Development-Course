@@ -45,30 +45,30 @@
 
 /* -------------- To Do List App --------------------- */
 // Add task & Delete Task
-// function addTask() {
-//   const input = document.getElementById("taskInput");
-//   const taskText = input.value.trim();
-//   if (!taskText) return;
-//   const li = document.createElement("li");
-//   li.textContent = taskText;
+function addTask() {
+  const input = document.getElementById("taskInput");
+  const taskText = input.value.trim();
+  if (!taskText) return;
+  const li = document.createElement("li");
+  li.textContent = taskText;
 
-//   const btn = document.createElement("button");
-//   btn.textContent = "Delete";
-//   btn.onclick = () => li.remove();
+  const btn = document.createElement("button");
+  btn.textContent = "Delete";
+  btn.onclick = () => li.remove();
 
-//   li.appendChild(btn);
-//   document.getElementById("taskList").appendChild(li);
-//   input.value = "";
+  li.appendChild(btn);
+  document.getElementById("taskList").appendChild(li);
+  input.value = "";
+}
+
+// const modal = document.getElementById("modal");
+
+// function openModal() {
+//   modal.style.display = "block";
 // }
 
-const modal = document.getElementById("modal");
+// function closeModal() {
+//   modal.style.display = "none";
+// }
 
-function openModal() {
-  modal.style.display = "block";
-}
-
-function closeModal() {
-  modal.style.display = "none";
-}
-
-modal.onclick = closeModal;
+// modal.onclick = closeModal;

@@ -98,6 +98,26 @@ document.getElementById("toggleBtn").addEventListener("click", function () {
   toggle.classList.toggle("highlight");
 });
 
+// ------------------Generate Random Color
+
+function changeColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+
+  // Corrected RGB format
+  const colors = `rgb(${r}, ${g}, ${b})`;
+
+  return colors;
+}
+
+function color() {
+  const box = document.getElementById("colorBox");
+  box.style.backgroundColor = changeColor(); // use function result
+}
+// var randomColor = changeColor();
+// console.log(randomColor);
+
 // const div = document.getElementById("toggleContainer");
 // const button = document.getElementById("toggleBtn");
 
